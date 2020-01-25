@@ -1,0 +1,71 @@
+#first {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    transition: width 2s, height 4s;
+    transition-timing-function: ease-in-out;
+    transition: linear 1s;
+}
+
+#first:hover {
+    width: 500px;
+    height: 200px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+#hidden {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    color: transparent;
+    transition: all 1s linear;
+}
+
+#hidden:hover {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#third {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    transition: all 3s ease;
+    transition-delay: 2s;
+}
+
+#third:hover {
+    width: 500px;
+    height: 200px;
+    background-color: green;
+    color: yellow;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 40px;
+}
+
+#visible {
+    color: black;
+}
+
+#visible:hover {
+    color: transparent;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: azure;
+}

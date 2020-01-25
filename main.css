@@ -1,9 +1,17 @@
 body {
-    background-color: burlywood;
+    background-color: bisque;
 }
 
 h1 {
     padding-top: 50px;
     text-align: center;
-    font: 20px;
+    font-size: 75px;
+}
+
+table {
+    font-size: 25px;
+}
+
+td {
+    padding-left: 25px;
 }
