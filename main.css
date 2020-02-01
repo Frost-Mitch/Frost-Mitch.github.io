@@ -1,18 +1,18 @@
 body {
-    background-color: bisque;
+    background-color: #a2e8b5;
 }
 
 h1 {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
+    font-family: cursive;
     font-size: 75px;
 }
 
-/*
-table {
-    font-size: 40px;
+h2 {
+    text-align: center;
+    font-family: cursive;
 }
-*/
 
 #progress {
     border-collapse: collapse;
@@ -26,14 +26,18 @@ table {
     font-size: large;
 }
 
-#progress tr:nth-child(even){background-color: #B4DFE5;}
+#progress tr:nth-child(even){
+    background-color: #32a852;
+}
 
-#progress tr:nth-child(odd){background-color: #D2FDFF;}
+#progress tr:nth-child(odd){
+    background-color: #2ebf54;
+}
 
 #progress th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: darkolivegreen;
+    background-color: #257339;
     color: white;
 }

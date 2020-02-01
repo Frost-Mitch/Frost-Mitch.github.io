@@ -5,11 +5,12 @@
     transition: width 2s, height 4s;
     transition-timing-function: ease-in-out;
     transition: linear 1s;
+    
 }
 
 #first:hover {
-    width: 500px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: purple;
     color: white;
     text-align: center;
@@ -23,11 +24,12 @@
     background-color: transparent;
     color: transparent;
     transition: all 1s linear;
+    
 }
 
 #hidden:hover {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: red;
     color: white;
     text-align: center;
@@ -35,17 +37,18 @@
     font-size: 30px;
 }
 
-#third {
+#delay {
     width: 200px;
     height: 100px;
     background-color: aqua;
     transition: all 3s ease;
     transition-delay: 2s;
+    
 }
 
-#third:hover {
-    width: 500px;
-    height: 200px;
+#delay:hover {
+    width: 350px;
+    height: 150px;
     background-color: green;
     color: yellow;
     text-align: right;
@@ -62,10 +65,97 @@
     padding: 10px;
 }
 
-h1 {
+#rotate {
+    width: 200px;
+    height: 100px;
+    background-color: purple;
+    transition: all 2s ease;
+    
+}
+
+#rotate:hover {
+    transform: rotate(1turn);
+    background-color: darkred;
+    color: white;
+    padding-top: 10px;
     text-align: center;
 }
 
+#skew {
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    transition: all 2s ease-in-out;
+    
+}
+
+#skew:hover {
+    transform: skew(30deg, 10deg);
+    background-color: aquamarine;
+    text-align: center;
+    color: green;
+    padding-top: 10px;
+}
+
+button {
+    background-color: lightgray;
+    transition: all .25s linear;
+}
+
+button:hover {
+    font-size: 20px;
+    background-color: #84b1fa;
+    color: white;
+    cursor: pointer;
+}
+
+#push {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+#scale {
+    width: 200px;
+    height: 100px;
+    background-color: darkcyan;
+    transition: all 1s ease-out;
+}
+
+#scale:hover {
+    transform: scale(1.5, 1.5);
+    background-color: darkolivegreen;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#top {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    transition: all 1s linear;
+}
+
+#top:hover {
+    color: crimson;
+    transform: rotate(1.0turn);
+}
+
+.transition {
+    display: inline-block;
+    padding: 10px
+}
+
+.transform {
+    float: right;
+    padding-right: 10px;
+}
+
 body {
-    background-color: azure;
+    background-color: azure;   
+}
+
+.page-footer {
+    font-size: 10px;
+    transform: translate(50%);
 }
