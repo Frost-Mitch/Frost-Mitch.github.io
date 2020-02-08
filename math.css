@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: azure;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#test {
+    font-size: 30px;
+    padding: 25px;
+}
+
+#right {
+    font-size: 30px;
+    color: green;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#wrong {
+    font-size: 30px;
+    color: red;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#Answers {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.newH1 {
+    font-style: italic;
+    font-size: 30px;
+    padding-bottom: 25px;
+    color: cornflowerblue;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='video.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="video.js"></script>
+    <title>Video/Canvas</title>
+</head>
+<body>
+    <div id="top"><b>Video, Audio, and Canvas</b></div>
+
+    <div id="push">
+        <a href="/index.html"><button>Home</button></a>
+    </div>
+
+    <div id="vid">
+        <h2>Learn how to draw!<br><br> Watch this video:</h2>
+    <video width="320" height="240" controls>
+        <source src="Drawing.mp4" type="video/mp4">
+        Your browser does not support this.  Tested in Chrome.
+    </video>
+    </div>
+
+    <div id="aud">
+        <h2>Listen to this:</h2>
+    <audio controls>
+        <source src="Drawing.mp4" type="audio/mpeg">
+        Your Browser doesn't support this.  Tested in Chrome.
+    </audio>
+    </div>
+
+    <div id="draw">
+        <h2>Use your mouse and draw your own picture:</h2>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+        <input type="button" id="clear" value="Clear">
+    </div>
+
+    <footer class="page-footer">
+        <p>Designed by Mitch Frost</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="math.css" type='text/css'>
+ 
+    <title>Math</title>
+    
+</head>
+
+<body>
+
+    <div id="title"><h1>Choose the right answer</h1></div>
+
+<div id="test">42 + 20 = ?</div>
+    
+<div id="Answers">
+<button onclick="wrongAnswer()">90</button>
+<button onclick="rightAnswer()">62</button>
+<button onclick="wrongAnswer()">63</button>
+<button onclick="wrongAnswer()">72</button>
+</div>
+    
+<div id="right" style="display: none;">Correct! <br> Answer is 62</div>
+    
+<div id="wrong" style="display: none;">Try Again!</div>   
+    
+<button onclick="changeStyle()">Change text style</button>
+<button onclick="changeBack()">Change back</button>
+
+    
+   <script src="math.js"></script>
+</body>
+</html>

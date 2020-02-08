@@ -1,0 +1,45 @@
+body {
+    background-color: #99e6f2;
+    padding: 10px;
+}
+
+#top {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+#aud {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: lightgray;
+    transition: all .25s linear;
+}
+
+button:hover {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: fantasy;
+}
+
+#push {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#myCanvas {
+    border: 1px solid black;
+}
+
+.page-footer {
+    font-size: 10px;
+    text-align: center;
+}
