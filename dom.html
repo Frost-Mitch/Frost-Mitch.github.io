@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css" type='text/css'>
+
+    <title>Dom Manipulation</title>
+</head>
+
+<body>
+
+    <div id="push">
+        <a href="/index.html"><button>Home</button></a>
+    </div>
+
+<h1>DOM Manipulation Example</h1>
+
+<div id="title">Favorite Scriptures</div>
+
+<p id="mainText"></p>
+
+    <p id="content">3 Nephi <br> Verse 6 - And behold, the third time they did understand the voice which they heard; and it said unto them:</p>
+
+<button onclick="newPara()">See verse 7</button>
+<button onclick="thirdPara()">See verse 8</button>
+<button onclick="fourthPara()">See verses 9/10</button>
+    <br>
+
+<div id="button">
+<input type="button" value="Hover to see picture" onmouseover="create();" onmouseout="destroy();">
+    </div>
+    <p id="container"></p>
+
+   <script src="dom.js"></script>
+</body>
+</html>

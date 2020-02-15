@@ -1,0 +1,80 @@
+body {
+    background-color: azure;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+button {
+    background-color: lightgray;
+    transition: all .25s linear;
+}
+
+button:hover {
+    font-size: 20px;
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 35px;
+    animation: title 10s linear;
+}
+
+@keyframes title {
+    0% {transform: translateX(120%);}
+    100% {transform: translateX(0%);}
+}
+
+#drive {
+  background: azure;
+  border-radius: 6px;
+  height: 100px;
+  position: relative;
+  min-width: 538px;
+}
+
+#drive:hover #jeep {
+  animation-name: truck;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+#drive:active #jeep {
+  animation-play-state: paused;
+}
+
+#jeep {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+@keyframes truck {
+  0% {left: 90%; top: 0;}
+  100% {left: 0; top: 0;}
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: darkolivegreen;
+}
+
+.ball:hover {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 20;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);}
+  to   { transform: translate3d(0, 150px, 0);}
+}
