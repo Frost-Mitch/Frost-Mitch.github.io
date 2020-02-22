@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background-color: azure;
+}
+
+#home {
+    text-align: left;
+}
+
+#title {
+    font-size: 35px;
+    font-style: italic;
+}
+
+input[type=button] {
+    border-radius: 4px;
+}
+
+#btn:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+input[type=button]:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+div {
+    margin-bottom: 10px;
+}
+input:invalid + span:after {
+    content: 'x';
+    color: red;
+    padding-left: 5px;
+}
+
+input:valid + span:after {
+    content: '✓';
+    color: lawngreen;
+    padding-left: 5px;
+}
+
+h2 {
+    padding-top: 30px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="jsloops.css">
+</head>
+
+<body>
+    
+    <div id="home">
+        <a href="/index.html"><button id="btn">Home</button></a>
+    </div>
+    
+    <h1 id="title">JavaScript Loops, Conditional Statements, Etc.</h1>
+    
+    <h2>This uses a while loop</h2>
+    <div>
+    <label for="numLoop">Count down to zero - enter a number between 1 and 20: </label>
+        <input type="number" min="1" max="20" id="numLoop" name="numLoop"> 
+        <span class="validity"></span>  
+    </div>
+        <input type="button" onclick="loop()" value="Click"> <br>
+        <p id="loopOut"></p>
+    
+    <h2>Conditional Statements</h2><br>
+    <label for="cond">Is odd or even? Enter a number (between 1 and 100): </label>
+        <input type="number" min="1" max="100" id="cond">
+        <span class="validity"></span> <br>
+    <input type="button" onclick="con()" value="Click"> <br>
+    <p id=condOut></p>
+    
+    <h2> Variables, Parameters and Arrays/Associative Arrays</h2>
+    <label for="number">Sort from highest to lowest. Enter 3 numbers (between 1 and 100): </label><br>
+    <input type="number" min="1" max="100" id="varNum1">
+    <span class="validity"></span> <br>
+    <input type="number" min="1" max="100" id="varNum2">
+    <span class="validity"></span> <br>
+    <input type="number" min="1" max="100" id="varNum3">
+    <span class="validity"></span> <br>
+    <input type="button" onclick="variables()" value="click"> <br>
+    <p id="parOut"></p>
+        
+    <h2>Associative Arrays</h2>
+    <label for="text">Enter 3 names and their favorite book: </label><br>
+    <input type="text" id="arrName1" placeholder="e.g. Jeff">
+    <input type="text" id="arrBook1" placeholder="e.g. Harry Potter"><br>
+    <input type="text" id="arrName2">
+    <input type="text" id="arrBook2"><br>
+    <input type="text" id="arrName3">
+    <input type="text" id="arrBook3"><br>
+    <input type="button" onclick="assoArr()" value="submit"><br>
+    <p id="arrOut"></p>
+    
+    <script src="jsloops.js"></script>
+</body>
+</html>
