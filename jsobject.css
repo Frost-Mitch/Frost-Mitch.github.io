@@ -1,0 +1,42 @@
+body {
+        background-color: azure;
+        }
+main {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+
+}
+
+label {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+th {
+    text-align: left;
+}
+
+h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}

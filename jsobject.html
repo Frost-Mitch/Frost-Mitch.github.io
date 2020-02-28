@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+    <link rel="stylesheet" href="jsobject.css">
+</head>
+
+<body>
+    <div id="home">
+        <a href="/index.html"><button>Home</button></a>
+    </div>
+    <main>
+        <h1>JavaScript Objects</h1>
+        <section>
+            <h2>Add Cars to Inventory</h2>
+            <label>
+                Color: <input type='text' id='color' placeholder="e.g. White"><br>
+            </label>
+            <label>
+                Brand: <input type='text' id='brand' placeholder="e.g. Toyota"><br>
+            </label>
+            <label>
+                Model: <input type='text' id='model' placeholder="e.g. Camry"><br>
+            </label>
+            <label>
+                Style: <input type='text' id='ctype' placeholder="e.g. Sedan"><br>
+            </label>
+            <label>
+                Quantity: <input type='number' id='quantity' value="1">
+            </label> <br>
+            <button type='button' onclick='createNewCarObject()'>Add Car</button>
+        </section>
+        <section>
+        </section>
+        <section>
+            <h2>My Car Inventory</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>Quantity</th>
+                    <th>Color</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Style</th>
+                    <th></th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="jsobject.js"></script>
+</body></html>
