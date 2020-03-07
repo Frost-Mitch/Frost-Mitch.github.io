@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <link rel="stylesheet" href="jsevents.css">
+</head>
+
+<body onload="alerting()">  <!-- alert after the page loads. -->
+
+    <div id="push">
+        <a href="/index.html"><button>Home</button></a>
+    </div>
+
+    <h1 id="title">JS Events</h1>
+
+    <h3>onTouchStart</h3>
+
+    <p>This square will turn blue when clicked or will turn purple if touched on a touch screen.</p>
+
+    <div id="change" onclick="myFunction1('change', 'blue')" onTouchStart="myFunction1('change','purple')"></div>
+    <br> <br>
+
+    <h3>This will change your text to be capitalized</h3> <!-- onkeyup to change to caps -->
+    Enter whatever you'd like in lowercase: <input type="text" id="keytouch" onkeyup="capitalize()"><br><br>
+
+    <h3>onScroll</h3>
+    <div id="myDIV">And it came to pass that I, Nephi, said unto my father: I awill go and do the things which the Lord hath commanded, for I know that the Lord giveth no bcommandments unto the children of men, save he shall cprepare a way for them that they may accomplish the thing which he commandeth them. </div>
+    <p id="demo"></p> <br>
+
+    <aside>
+        <h3>Double Click</h3>
+        <p>Double click to resize this object.</p>
+    </aside>
+
+    <script src="jsevents.js"></script>
+</body>
+
+</html>
