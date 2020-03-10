@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Local Storage and JSON</title>
+    <link rel="stylesheet" href="jslocal.css">
+</head>
+
+<body onload="loadLocalStorage()">
+    <a href="/index.html"><button>Home</button></a>
+
+    <h1>JavaScript Local Storage and JSON</h1><br>
+    <div id="main">
+        <p class="p1">Make your own funny story. Just type in nouns, adjectives, and your name and click enter. Your story will be saved in local storage until you click delete.</p>
+        <div id="form">
+            <h2>Fill in the following:</h2>
+            <p class="p2">
+                Noun: <input id='noun1' type="text" placeholder="e.g. robot"><br><br>
+                Adjective: <input id='adjective1' type="text" placeholder="e.g. red"><br><br>
+                Adjective: <input id='adjective2' type='text' placeholder="e.g. long"><br><br>
+                Noun: <input id='noun2' type='text' placeholder="e.g. rock"><br><br>
+                Your Name: <input id='yourName' type='text' placeholder="e.g. Mike"><br><br>
+            </p>
+            <button id='button' onclick='getUserInput()'>Enter</button>
+        </div><br><br>
+        <div id="savedData"></div>
+    </div>
+
+    <script src="jslocal.js"></script>
+</body>
+
+</html>
