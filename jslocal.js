@@ -15,7 +15,7 @@ function getUserInput() { // eslint-disable-line no-unused-vars
         fifth: fifth
     };
     // create a phrase
-    var stringArray = ["Bob was a ", ".  He had ", " arms ", "and ", " legs.  One day, he saw a ", ".  He carried it home to his best friend, ", ".  The end."];
+    var stringArray = ["Bob was a ", ".  He had ", " arms and ", " legs.  One day, he saw a ", ".  He carried it home to his best friend, ", ".  The end."];
 
     var object = new PhraseObject(phrase, stringArray);
     // convert to JSON
@@ -58,7 +58,7 @@ function loadLocalStorage() {
     // Add the sentence
     var paragraph = document.createElement("p");
     paragraph.setAttribute("class", "sentence");
-    var text = sentence[0] + phrase.first + sentence[1] + phrase.second + sentence[2] + sentence[3] + phrase.third + sentence[4] + phrase.fourth + sentence[5] + phrase.fifth + sentence[6];
+    var text = sentence[0] + phrase.first + sentence[1] + phrase.second + sentence[2] + phrase.third + sentence[3] + phrase.fourth + sentence[4] + phrase.fifth + sentence[5];
 
     node = document.createTextNode(text);
     paragraph.appendChild(node);
