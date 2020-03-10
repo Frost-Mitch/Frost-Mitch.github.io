@@ -1,5 +1,5 @@
 /*eslint-env browser*/
-//get the data and store it in JSON 
+//get the data and store it in JSON
 function getUserInput() { // eslint-disable-line no-unused-vars
     var first = document.getElementById("noun1").value;
     var second = document.getElementById("adjective1").value;
@@ -18,7 +18,7 @@ function getUserInput() { // eslint-disable-line no-unused-vars
     var stringArray = ["Bob was a ", ".  He had ", " arms ", "and ", " legs.  One day, he saw a ", ".  He carried it home to his best friend, ", ".  The end."];
 
     var object = new PhraseObject(phrase, stringArray);
-    // convert it to JSON
+    // convert to JSON
     var jsonObject = JSON.stringify(object);
 
     saveObject(jsonObject);
@@ -30,7 +30,7 @@ function PhraseObject(phrase, stringArray) {
     this.stringArray = stringArray;
 }
 
-//  stores to the local storage api 
+//  stores to the local storage api
 function saveObject(jsonObject) {
     if (typeof (Storage) !== "undefined") {
         localStorage.phraseObject = jsonObject;
@@ -67,21 +67,11 @@ function loadLocalStorage() {
     var button = document.createElement("button");
     button.setAttribute('type', 'button');
     button.setAttribute('onclick', 'deleteObject()');
-//    button.setAttribute('class', 'delete');
     node = document.createTextNode("Delete");
     button.appendChild(node);
 
     element.appendChild(button);
 
-//    var footNote = document.createElement("p");
-//    node = document.createTextNode("**Your story will be saved even if you refresh your page. Click delete to delete and create another story.");
-//    footNote.appendChild(node);
-
-//    element.appendChild(document.createElement('br'));
-//    element.appendChild(document.createElement('br'));
-//    element.appendChild(footNote);
-
-    // have form disappear
     document.getElementById("form").style.display = "none";
 }
 
