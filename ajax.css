@@ -1,0 +1,40 @@
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+list {
+    align-content: center;
+}
+
+#wrapper li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    margin: 2% 10px;
+    color: darkblue;
+    font-size: 5vw;
+    height: 1.2em;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}
+
+button:hover {
+    background-color: darkblue;
+    cursor: pointer; 
+    transform: scale(1.2);
+}

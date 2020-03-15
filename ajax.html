@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="ajax.css">
+</head>
+
+<body>
+    <h1>AJAX - Requesting a JSON file</h1>
+    <h2>Get the Current Weather</h2>
+
+    <p>Select a city to see the weather</p>
+
+    <form name="list">
+        <input type="radio" name="city" value="5777544" id="one"><label for="one">Logan, Utah</label>
+        <input type="radio" name="city" value="5856195" id="two"><label for="two">Honolulu, Hawaii</label>
+        <input type="radio" name="city" value="5861897" id="three"><label for="three">Fairbanks, Alaska</label>
+    </form>
+    <br> <br>
+
+    <button id="btn" type="button">Get Weather</button>
+
+    <div id="wrapper">
+        <ul>
+            <li id="info1"></li>
+            <li id="info2"></li>
+            <li id="info3"></li>
+            <li id="info4"></li>
+
+        </ul>
+    </div>
+
+    <a href="/index.html"><button>Home</button></a>
+    <script src="ajax.js"></script>
+</body>
+
+</html>
