@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="us-en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">    
+    <title>Memory Cards</title>
+</head>
+
+<body>
+    <a href="/index.html"><button>Home</button></a>
+
+    <h1>CIT-261 Final Project</h1>
+    <h2 id="second">Memory Card Game</h2>
+    
+    <button onclick="location.reload()">Reset</button>
+    
+    <div id="stage">
+        <!--this is the card mat-->
+    </div>
+
+    <script type="text/javascript" src="cards.js"></script>
+    <script type="text/javascript">
+        var game = new memoryGame("stage");
+
+    </script>
+
+    <h2 class="text">Click on the deck to begin!</h2>
+    
+    <wrapper id="thanks">
+    <div class="callout">
+        <span class="closebutton" onclick="this.parentElement.style.display='none';">x</span>
+        <div class="callout-container">
+        <p>Thank you for playing!<br>Have a great day!</p>
+        </div>
+    </div>
+    </wrapper>
+    
+    <footer class="page-footer">
+        <p>Final Project by Mitch Frost</p>
+    </footer>
+    
+</body>
+
+</html>
